@@ -1,0 +1,225 @@
+
+@font-face {
+    font-family: source;
+    src: url(./fonts/Source_Code_Pro/SourceCodePro-Bold.ttf);
+}
+
+@font-face {
+    font-family: rubik;
+    src: url(./fonts/Rubik_Mono_One/RubikMonoOne-Regular.ttf);
+}
+
+/* body{
+    background-color: #696969;
+    justify-content: center;
+    align-items: center;
+} */
+
+.border {
+    position: relative;
+    width: 100%;
+    height: 98vh;
+    background: linear-gradient(135deg, #696969 0%, #19eedd 100%);
+    display: grid;
+    place-items: center;
+    border-radius: 6px;
+}
+
+.content {
+    position: absolute;
+    width: 97%;
+    height: 93vh;
+    background: #fff;
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding: 1rem;
+}
+.header {
+    margin-left: 4vw;
+    width: 90vw;
+    height: 30vh;
+    justify-content: space-between;
+    /* padding: 20px;
+    margin-top: 20px; */
+    display: flex;
+    /* background-color: #fff; */
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    /* box-shadow: 0px 0px 11px 5px rgba(0,0,0,0.75); */
+}
+
+.navbar {
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin-top: 10%;
+    margin-right: 5%;
+}
+
+.title {
+    font-family: source;
+    color: #696969;
+    margin: 5% 0% 0% 3%;
+
+}
+.logo img {
+    width: 20%;
+}
+/* .menu li a {
+    text-decoration: none;
+    font-family: source ;
+    color: inherit;
+
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 10%;
+}
+
+/* NUEVO MENU */
+/* :root {
+    --body-bg-color: #1a1c1d;
+    --text-color: #aaaebc;
+    --hr-color: #26292a;
+    --red: #e74c3c;
+  } */
+
+  ul {
+    list-style: none;
+  }
+
+  .menu a {
+    color: inherit;
+    text-decoration: none;
+    font-family: Source;
+    font-size: 1.3rem;
+  }
+
+  body {
+    margin: 30px 0;
+  }
+
+
+  .menu {
+    display: flex;
+    justify-content: center;
+  }
+
+  .menu li {
+    margin-right: 70px;
+  }
+
+  .menu a {
+    position: relative;
+    display: block;
+    padding: 5px;
+  }
+
+  .menu a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #494949, #19eedd, #494949);
+    z-index: 1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .menu a:hover::before {
+    transform: scaleX(1);
+  }
+  .menu[data-animation="center"] a::before {
+    transform-origin: center;
+  }
+
+.main{
+    width: 90vw;
+    height: 70vh;
+    /* background-color:#fff; */
+    margin-left: 4vw;
+    z-index: -5;
+}
+
+.descripcion {
+    align-items: center;
+    height: 80vh;
+}
+.developer {
+    padding: 15 5 10 10;
+    justify-content: center;
+    font-family: rubik;
+    font-size: 5em;
+    color:#19eedd;
+    /* padding-left: 10%;   */
+    line-height: 75px;
+}
+
+.developer span {
+    font-style: italic;
+    display: block;
+    position:absolute ;
+    padding-left: 25%;
+    font-size: .7em;
+}
+.parrafo {
+    font-family: source;
+    font-weight: 400;
+    font-size: 1.3em;
+    width: 60vw;
+    padding-left: 20%;
+    padding-top: 5%;
+    z-index: 50;
+}
+
+.work {
+    padding: 15 5 10 10;
+    justify-content: center;
+    font-family: rubik;
+    font-size: 5em;
+    padding-left: 40%;
+}
+
+/* -------------------------------- proyectos ------------------------------- */
+* {
+  box-sizing: border-box;
+}
+body{ 
+  margin: 0%;
+  padding: 0%;
+}
+.img {
+  width: 30%;
+}
+
+.trabajos{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3%;
+}
+
+.galeria{
+  flex: 30%;
+  pad: 5%;
+  width: 100%;
+}
+
+.galeria img{
+  margin-top: -13%;
+}
+
+@media (max-whidth:1700px) {
+  .galeria{
+    flex: 50%;
+  }
+}
+@media (max-whidth:800px) {
+  .trabajos .galeria{
+    flex: 100%;
+  }
+}
