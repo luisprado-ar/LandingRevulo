@@ -195,12 +195,17 @@ body{
 }
 .img {
   width: 30%;
+  margin: 1%;
+  flex-wrap: wrap;
 }
 
 .trabajos{
   display: flex;
   flex-wrap: wrap;
   padding: 3%;
+  justify-content: space-around;
+  width: 100%;
+  gap: 10%;
 }
 
 .galeria{
