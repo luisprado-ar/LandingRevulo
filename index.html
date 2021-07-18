@@ -4,84 +4,114 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Luis Prado DEV</title>
+    <title>Revuelo Web</title>
     <link rel="shortcut icon" href="./media/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link href="./all.css" rel="stylesheet"> <!--load all styles -->
     <script src="https://kit.fontawesome.com/e3810d707d.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="border">
      <div class="content">  
         <header class="header">
-            <h1 class="title">Luis Prado DEV.</h1>
-            <!-- <div class="logo">
-                <img src="./media/logotrasparete.png" alt="">
-            </div> -->
-            <nav>
+            <div class="logo">
+                <img src="./logo/ISOLOGO R.svg" alt="">
+            </div>
+            <nav class="navbar">
                   <ul class="menu" data-animation="center">
                     <li><a href="#perfil" >Perfil</a></li>
                     <li><a href="#proyectos" >Proyectos</a></li>
                     <li><a href="#contacto" >Contacto</a></li>
                   </ul>
             </nav>
-            <!-- Menu Responsive -->
-            <div class="menu-btn">
-                <div class="manu-btn-burger"></div>
-            </div>
-            <script src="main.js" type="text/javascript"> </script>
+            <!-- ----------------------------------------------------------------------- -->
+            <!--                             Menu Responsive                             -->
+            <!-- ----------------------------------------------------------------------- -->
+            
         </header>    
             <main class="main">
                 <section class="descripcion">
-                    <h2 class="developer">
-                        <a>FULL STACK <span>developer</span></a>
-                    </h2>
+                    <h1 class="title">
+                        Revuelo Web
+                    </h1>
                         <p class="parrafo">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum deleniti adipisci eius ullam atque blanditiis rerum consectetur aut id. Debitis aut aliquam pariatur sequi provident quaerat tenetur voluptatum laudantium architecto.
+                    Diseño y Alojamiento web
                         </p>
-                    <div class="contenedor-galeria">
-                        <h2 class="work">
-                            WORK
-                        </h2>
-                    </div>
-                </section>
-                <div class="trabajos" id="proyectos">
-                    <div class="galeria">
-                        <a>
-                            <img class="img" src="./media/screely-1626029859005.png" alt="">
-                        </a>
-                        <a href="">
-                            <img class="img" src="./media/screely-1626029885062.png" alt="">
-                        </a>
-                        <a href="">
-                            <img class="img" src="./media/screely-1626029902539.png" alt="">
-                        </a>
-                    </div>
-                </div>
+
+                <!-- ----------------------------------------------------------------------- -->
+                <!--                                Servicios                                -->
+                <!-- ----------------------------------------------------------------------- -->
                 <div class="hacemos">
                     <h2 class="title-hacemos">
                         Que hacemos?
                     </h2>
-                    <p class="p-hacemos">Creamos y hechamos a andar tus ideas</p>
-                <div class="servicios">
-                    <div class="branding">
-                        <i class="fas fa-lightbulb"></i>
+                    <p class="p-hacemos">Damos vida a tus ideas</p>
+                <div class="servicios-container">
+                    <div class="servicios">
+                        <i id="ico" class="fas fa-lightbulb"></i>
                         <h2>BRANDING</h2>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, minima rerum velit facilis dicta sint, repellat pariatur molestias cupiditate perspiciatis assumenda placeat quis enim voluptas optio doloremque, error quo ipsa.</p>
+                        <p class="description" >Le damos una imágen tu marca. Le damos una identidad a tu proyecto o emprendimiento</p>
                     </div>
-                    <div class="seo">
-                        <i class="fas fa-bullhorn"></i>
+                    <div class="servicios">
+                        <i id="ico" class="fas fa-bullhorn"></i>
                         <h2>SEO</h2>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, minima rerum velit facilis dicta sint, repellat pariatur molestias cupiditate perspiciatis assumenda placeat quis enim voluptas optio doloremque, error quo ipsa.</p>
+                        <p class="description" >Creamos una estrategia para posicionar tu web, fácil de encontrar por tus potenciales clientes.</p>
                     </div>
-                    <div class="diseño">
-                        <i class="fas fa-desktop"></i>
+                    <div class="servicios">
+                        <i id="ico" class="fas fa-desktop"></i>
                         <h2>DISEÑO</h2>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, minima rerum velit facilis dicta sint, repellat pariatur molestias cupiditate perspiciatis assumenda placeat quis enim voluptas optio doloremque, error quo ipsa.</p>
+                        <p class="description" >Diseñamos tu web, acorde a la identidad de tu marca, si perder de vista la utilidad, para hacer crecer tus ventas.</p>
                     </div>
                 </div>    
-                </div>            
+                </div> 
+                        <!-- ----------------------------------------------------------------------- -->
+                        <!--                                Trabajos                                 -->
+                        <!-- ----------------------------------------------------------------------- -->
+                        <div class="contenedor-galeria">
+                            <h2 class="work">
+                                Proyectos
+                            </h2>
+                            <div class="trabajos" id="proyectos">
+                                <div class="galeria">
+                                <a>
+                                    <img class="img" src="./media/screely-1626029859005.png" alt="">
+                                </a>
+                                <a href="">
+                                    <img class="img" src="./media/screely-1626029885062.png" alt="">
+                                </a>
+                                <a href="">
+                                        <img class="img" src="./media/screely-1626029902539.png" alt="">
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- ----------------------------------------------------------------------- -->
+                    <!--                               Testimonios                               -->
+                    <!-- ----------------------------------------------------------------------- -->
+                    <div class="testimonios">
+                            <h2 class="title-clientes">
+                            Clientes
+                            </h2>
+                            <div class="clientes">
+                        <div class="cliente">
+                            <i id="id" class="user"> <span>Honoria</span> </i>
+                            <h2>Honoria</h2>
+                            <p class="coment" >"Súper recomendable, al fin tengo el sitio web que quería"</p>
+                        </div>
+                        <div class="cliente">
+                            <i id="ico" class="far fa-user"></i>
+                            <h2>Cástulo</h2>
+                            <p class="coment" >"Es notable que nuevos clientes están contratando mis servicios, me encuentran en Google"</p>
+                        </div>
+                        <div class="cliente">
+                            <i id="id" class="user"></i>
+                            <h2>Eustaquio</h2>
+                            <p class="coment" >"Muy contento con mi sitio web, y me encanta mi logo"</p>
+                        </div>
+                            </div>
+                    </div>
             </main>
-     </div>      
+        </div>      
     </div>    
 </body>
 </html>

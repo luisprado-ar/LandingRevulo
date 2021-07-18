@@ -8,17 +8,20 @@
     font-family: rubik;
     src: url(./fonts/Rubik_Mono_One/RubikMonoOne-Regular.ttf);
 }
+@font-face {
+  font-family: Revuelo;
+  src: url(./fonts/HussarEkologiczne1.otf);
+}
 
-/* body{
-    background-color: #696969;
-    justify-content: center;
-    align-items: center;
-} */
+body{
+    background-color: #ffffff;
+}
 
 .border {
     width: 100%;
     height: 1900px;
-    background: linear-gradient(135deg, #696969 0%, #19eedd 100%);
+    /* background-color: #050505; */
+    /* background-image: linear-gradient(160deg, #050505 0%, #19eedd 100%); */
     display: grid;
     place-items: center;
     border-radius: 6px;
@@ -27,52 +30,50 @@
 .content {
     position: absolute;
     width: 97%;
-    height: 93vh;
+    height: 75vh;
     background: #fff;
-    box-sizing: border-box;
     border-radius: 6px;
     padding: 1rem;
     margin-top: 1.3%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1.3%;
 }
 .header {
     margin-left: 4vw;
     width: 90vw;
-    height: 30vh;
+    height: 25vh;
     justify-content: space-between;
-    /* padding: 20px;
-    margin-top: 20px; */
     display: flex;
-    /* background-color: #fff; */
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
-    /* box-shadow: 0px 0px 11px 5px rgba(0,0,0,0.75); */
 }
 
 .navbar {
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
-    margin-top: 10%;
+    margin-top: 5%;
     margin-right: 5%;
 }
 
-.title {
-    font-family: source;
-    color: #696969;
-    margin: 5% 0% 0% 3%;
 
-}
 .logo img {
-    width: 20%;
+    width: 30%;
+    padding-top: 8%;
 }
-
+.logo {
+  justify-content: center;
+  align-items: center;
+  margin-left: 15%;
+  filter: drop-shadow(0 10px 4px rgba(0, 0, 0, 0.7));
+}
 
   ul {
     list-style: none;
   }
 
   .menu a {
-    color: inherit;
+    color: #373a40;
     text-decoration: none;
     font-family: Source;
     font-size: 1.3rem;
@@ -105,7 +106,7 @@
     left: 0;
     width: 100%;
     height: 2px;
-    background: linear-gradient(to right, #494949, #19eedd, #494949);
+    background: #19d3da;
     z-index: 1;
     transform: scaleX(0);
     transform-origin: left;
@@ -118,60 +119,7 @@
   .menu[data-animation="center"] a::before {
     transform-origin: center;
   }
-/* -------------------------------------------------------------------------- */
-/*                               Menu Responsive                              */
-/* -------------------------------------------------------------------------- */
 
-.menu-btn{
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 80px;
-  height: 80px;
-  cursor: pointer;
-  transition: all 0.5s ease-in-out;
-}
-
-.menu-btn-burger{
-  width: 50px;
-  height: 6px;
-  background: #fff;
-  border-radius: 5px;
-  transition: all 0.5s ease-in-out;
-}
-.menu-btn-burger::before,
-.menu-btn-burger::after{
-  content: "";
-  position: absolute;
-  width: 50px;
-  height: 6px;
-  background: #fff;
-  border-radius: 5px;
-  transition: all 0.5s ease-in-out;
-}
-
-.menu-btn-burger::before{
-  transform: translateY(-16px);
-}
-
-.menu-btn-burger::after{
-  transform: translateY(16px);
-}
-    /* Animation */
-
-.menu-btn.open .menu-btn-burger{
-transform: translateX(50px);
-background: transparent;
-}
-
-.menu-btn.open .menu-btn-burger::before{
-transform: rotate(45deg) translate(35px, -35px);
-}
-
-.menu-btn.open .menu-btn-burger::after{
-  transform: rotate(-45deg) translate(35px, 35px);
-}
 .main{
     width: 90vw;
     height: 70vh;
@@ -184,44 +132,142 @@ transform: rotate(45deg) translate(35px, -35px);
     align-items: center;
     height: 80vh;
 }
-.developer {
-    padding: 15 5 10 10;
-    justify-content: center;
-    font-family: rubik;
-    font-size: 5em;
-    color:#19eedd;
-    /* padding-left: 10%;   */
-    line-height: 75px;
+.title {
+
+  justify-content: center;
+  font-family: Revuelo;
+  font-size: 5em;
+  color:#19d3da;
+  padding-left: 10%; 
+  
 }
 
-.developer span {
-    font-style: italic;
-    display: block;
-    position:absolute ;
-    padding-left: 25%;
-    font-size: .7em;
-}
 .parrafo {
     font-family: source;
     font-weight: 400;
     font-size: 1.3em;
     width: 60vw;
     padding-left: 20%;
-    padding-top: 5%;
+    margin-top: -2%;
     z-index: 50;
 }
 
-.work {
-    padding: 15 5 10 10;
-    justify-content: center;
-    font-family: rubik;
-    font-size: 5em;
-    padding-left: 40%;
+/* -------------------------------------------------------------------------- */
+/*                               MEDIA QUIERIES                               */
+/* -------------------------------------------------------------------------- */
+@media (max-width:1700px) {
+  .galeria .galeria img{
+    flex: 50%;
+    flex-direction: column;
+  }
+}
+@media (max-width:800px) {
+  .trabajos {
+    flex: 100%;
+    }
+  .galeria a{ 
+    flex-direction: column;
+    flex-wrap: wrap;
+  }  
+  }
+  @media (max-width: 400px) {
+.developer a{
+    font-size: 2rem;
+    color: red;
+  }
+  .servicios-container{
+    width: 90%;
+    flex-direction: column;
+  }
+  }
+
+  @media (max-width: 600px) {
+    .title-hacemos{
+      font-size: 1rem;
+      color: peru;
+    }
+  }
+/* -------------------------------------------------------------------------- */
+/*                                  Servicios                                 */
+/* -------------------------------------------------------------------------- */
+.hacemos {
+  margin-top: 10%;
+  margin-bottom: 5%;
+  width: 100%;
+  height: 70vh;
+  /* position: relative; */
+  background: #ffff;
+  background-color: rgba(200, 200, 200, 0.5);
+}
+.hacemos {
+  border-radius: 50px;
+  box-shadow: 20px 20px 60px #cccccc, -20px -20px 60px #ffffff;
+}
+
+.title-hacemos{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 2%;
+  font-family: Source;
+  font-size: 5rem;
+  color:white;
+  text-shadow: #373a40 2px 5px;
+}
+
+.p-hacemos{
+  justify-content: center;
+  text-align: center;
+  font-family: Source;
+  font-size: 2rem;
+  color: #373a40;
+}
+
+.servicios-container{
+  width: 100%;
+  display: flex;
+}
+.servicios-container div{
+  justify-content: space-around;
+  padding: 2%;
+  margin-top: 1%;
+  align-items: center;
+  text-align: center;
+}
+
+#ico {
+  font-size: 4rem;
+  color:#19d3da;
+}
+
+.servicios h2 {
+  color: whitesmoke;
+  text-shadow: #373a40 2px 3px 5px;
+}
+.description {
+  color: #373a40;
+  font-family: Source;
+  font-size: 1rem;
 }
 
 /* -------------------------------------------------------------------------- */
-/*                                  proyectos                                 */
+/*                                  Trabajos                                  */
 /* -------------------------------------------------------------------------- */
+.contenedor-galeria {
+  width: 100%;
+  flex-wrap: wrap;
+}
+.work {
+  /* padding: 15 5 10 10; */
+  justify-content: center;
+  font-family: Source;
+  font-size: 5rem;
+  color:#686d76;
+  text-shadow: #eeeeee 2px 5px;
+  /* padding-left: 40%; */
+  text-align: center;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -245,44 +291,70 @@ body{
 }
 
 .galeria{
-  flex: 30%;
+  display: flex;
   pad: 5%;
   width: 100%;
 }
 
 .galeria img{
-  margin-top: -13%;
-}
-
-@media (max-whidth:1700px) {
-  .galeria{
-    flex: 50%;
-  }
-}
-@media (max-whidth:800px) {
-  .trabajos .galeria{
-    flex: 100%;
-  }
+  width: 90%;
+  justify-content: space-around;
 }
 /* -------------------------------------------------------------------------- */
-/*                                  Servicios                                 */
+/*                                 Testimonios                                */
 /* -------------------------------------------------------------------------- */
-.hacemos {
+.testimonios {
   width: 100%;
-  height: 80vh;
-  display: flexbox;
-  position: relative;
-  background: #ffff;
+  height: 50vh;
+  border-radius: 50px;
   background-color: rgba(200, 200, 200, 0.5);
+  box-shadow: 20px 20px 60px #cccccc, -20px -20px 60px #ffffff;
 }
 
-.title-hacemos{
+.title-clientes {
   display: flex;
   justify-content: center;
   text-align: center;
   padding: 2%;
-  font-family: Rubik;
-  font-size: 4em;
-  color:#494949;
-
+  font-family: Source;
+  font-size: 5rem;
+  color:white;
+  text-shadow: #373a40 2px 5px;
 }
+
+.clientes {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.cliente {
+  width: 90%;
+  height: 15vh;
+  background: #eeeeee;
+  margin: 3%;
+  
+}
+
+#id {
+  font-size: 2rem;
+  color:#19d3da;
+}
+
+.cliente h2 {
+  
+color: whitesmoke;
+text-shadow: #373a40 2px 3px 5px;
+}
+.coment {
+  color: #373a40;
+  font-family: Source;
+  font-size: 1rem;
+  margin-top: -10%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+/* .user span {
+  color: whitesmoke;
+text-shadow: #373a40 2px 3px 5px;
+} */
