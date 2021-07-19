@@ -73,7 +73,7 @@ body{
   }
 
   .menu a {
-    color: #373a40;
+    color: #686d76;
     text-decoration: none;
     font-family: Source;
     font-size: 1.3rem;
@@ -149,44 +149,9 @@ body{
     padding-left: 20%;
     margin-top: -4%;
     z-index: 50;
-    color: #373a40;
+    color: #686d76;
 }
 
-/* -------------------------------------------------------------------------- */
-/*                               MEDIA QUIERIES                               */
-/* -------------------------------------------------------------------------- */
-@media (max-width:1700px) {
-  .galeria .galeria img{
-    flex: 50%;
-    flex-direction: column;
-  }
-}
-@media (max-width:800px) {
-  .trabajos {
-    flex: 100%;
-    }
-  .galeria a{ 
-    flex-direction: column;
-    flex-wrap: wrap;
-  }  
-  }
-  @media (max-width: 400px) {
-.developer a{
-    font-size: 2rem;
-    color: red;
-  }
-  .servicios-container{
-    width: 90%;
-    flex-direction: column;
-  }
-  }
-
-  @media (max-width: 600px) {
-    .title-hacemos{
-      font-size: 1rem;
-      color: peru;
-    }
-  }
 /* -------------------------------------------------------------------------- */
 /*                                  Servicios                                 */
 /* -------------------------------------------------------------------------- */
@@ -195,7 +160,6 @@ body{
   margin-bottom: 5%;
   width: 100%;
   height: 70vh;
-  /* position: relative; */
   background: #ffff;
   background-color: rgba(200, 200, 200, 0.5);
 }
@@ -226,7 +190,7 @@ body{
   text-align: center;
   font-family: Source;
   font-size: 2rem;
-  color: #373a40;
+  color: #686d76;
 }
 
 .servicios-container{
@@ -420,11 +384,86 @@ input {
   width: 20%;
   justify-content: center;
 }
+/* -------------------------------------------------------------------------- */
+/*                                   Footer                                   */
+/* -------------------------------------------------------------------------- */
 
-.footer {
+.footer-container {
+  display: flex;
   width: 100%;
+  justify-content: center;
+}
+.footer {
+  display: flex;
+  width: 95%;
   height: 10vh;
-  border-radius: 50px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
   background-color: rgba(200, 200, 200, 0.5);
   box-shadow: 20px 20px 60px #cccccc, -20px -20px 60px #ffffff;
+  margin-top: 55%;
+  align-items: center;
+  justify-content: space-around;
 }
+
+.footer i {
+  text-align: center;
+  align-items: center;
+}
+.foot {
+  font-family: source;
+  color: #686d76;
+  font-size: 1.5rem;
+}
+#red {
+  font-size: 1.5rem;
+  color:#686d76;
+}
+
+.redes {
+  width: 30%;
+  text-align: center;
+  align-items: center;
+}
+
+.redes a {
+  margin: 0% 3%;
+}
+/* -------------------------------------------------------------------------- */
+/*                               MEDIA QUIERIES                               */
+/* -------------------------------------------------------------------------- */
+@media (max-width:1700px) {
+  .galeria .galeria img{
+    flex: 50%;
+    flex-direction: column;
+  }
+}
+@media (max-width:800px) {
+  .trabajos {
+    flex: 100%;
+    }
+  .galeria a{ 
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .title {
+    font-size: 3rem;
+  }
+  }
+  @media (max-width: 400px) {
+.developer a{
+    font-size: 2rem;
+    color: red;
+  }
+  .servicios-container{
+    width: 90%;
+    flex-direction: column;
+  }
+  }
+
+  @media (max-width: 600px) {
+    .title-hacemos{
+      font-size: 1rem;
+      color: peru;
+    }
+  }
